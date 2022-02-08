@@ -66,6 +66,7 @@ option(ECAL_THIRDPARTY_BUILD_RECYCLE           "Build steinwurf::recylce with eC
 # option(ECAL_THIRDPARTY_BUILD_ZLIB              "Build zlib with eCAL"                                              ON)
 # option(ECAL_THIRDPARTY_BUILD_LIBSSH2           "Build libssh2 with eCAL"                                           ON)
 option(ECAL_THIRDPARTY_BUILD_GTEST             "Build gtest with eCAL"                                            OFF)
+option(ECAL_THIRDPARTY_BUILD_FTXUI             "Build ftxui with eCAL"                                             ON)
 
 if(WIN32)
   option(ECAL_THIRDPARTY_BUILD_PROTOBUF        "Build protobuf with eCAL"                                          ON)
@@ -129,6 +130,7 @@ set(possible_subprojects
   GTest
   HDF5
   CMakeFunctions
+  ftxui
 )
 
 # We should rename the option, but don't know how to do in in a 

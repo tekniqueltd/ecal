@@ -20,6 +20,7 @@ project(mon)
 
 find_package(Protobuf REQUIRED)
 find_package(tclap REQUIRED)
+find_package(ftxui REQUIRED)
 
 set(ecalmon_src
   src/ecal_mon.cpp
