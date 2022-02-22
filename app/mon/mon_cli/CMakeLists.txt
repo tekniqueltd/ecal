@@ -46,7 +46,10 @@ target_link_libraries(${PROJECT_NAME}
   protobuf::libprotobuf
   tclap::tclap
   eCAL::core
-  eCAL::pb)
+  eCAL::pb
+  ftxui::screen
+  ftxui::dom
+  ftxui::component)
 
 ecal_install_app(${PROJECT_NAME})
 
