@@ -1,0 +1,18 @@
+{
+  "Version": "v0.1.0",
+  "Author": "Flo Roeske",
+  "Name": "Video Frame Viewer",
+
+  "Priority": 3,
+
+  "SupportedTopics":
+    [
+      {
+        "Type": "oclea::pipeline::VideoFrame",
+        "Format": "raw"
+      }
+
+    ],
+
+  "OptionalTopics": []
+}
