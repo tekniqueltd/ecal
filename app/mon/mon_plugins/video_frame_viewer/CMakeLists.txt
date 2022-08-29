@@ -23,7 +23,16 @@ find_package(Qt5 COMPONENTS
     Widgets
 REQUIRED)
 
-find_package(OpenCV REQUIRED COMPONENTS core imgproc imgcodecs highgui)
+find_package(OpenCV COMPONENTS core imgproc imgcodecs highgui)
+
+if("${OpenCV_VERSION}" STREQUAL "")
+    message( STATUS "NOT building the video frame viewer plugin because you don't have OpenCV.")
+    message( STATUS "Consider installing it, e.g.")
+    message( STATUS "")
+    message( STATUS "    sudo apt install libopencv-dev")
+    message( STATUS "")
+    return()
+endif()
 
 message( STATUS "OpenCV library status:" )
 message( STATUS "    version: ${OpenCV_VERSION}" )
