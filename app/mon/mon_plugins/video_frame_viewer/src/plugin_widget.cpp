@@ -35,7 +35,7 @@ PluginWidget::PluginWidget(const QString& topic_name, const QString&, QWidget* p
 {
   ui_.setupUi(this);
 
-  last_frame_= cv::Mat(cv::Size(640, 480), CV_8UC3, cv::Scalar(255, 0, 0));
+  last_frame_= cv::Mat(cv::Size(640, 480), CV_8UC3, cv::Scalar(255, 255, 255));
 
   // Timestamp warning
   int label_height = ui_.publish_timestamp_warning_label->sizeHint().height();
