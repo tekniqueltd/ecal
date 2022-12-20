@@ -147,7 +147,6 @@ void PluginWidget::updateStringMessageView()
   if (!last_frame_.data)
       return;
 
-  cv::cvtColor(last_frame_, last_frame_, cv::COLOR_BGR2RGB);
   QPixmap pixmap = QPixmap::fromImage(QImage((unsigned char*)last_frame_.data,
                                              last_frame_.cols, last_frame_.rows,
                                              QImage::Format_RGB888));
